@@ -39,7 +39,7 @@ android {
 }
 
 dependencies {
-    val glide = "4.15.1"
+    val glide = "4.16.0"
     implementation("com.github.bumptech.glide:glide:$glide")
 
     implementation("androidx.core:core-ktx:1.9.0")

@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             override fun onLoadFailed(
                 e: GlideException?,
                 model: Any?,
-                target: Target<Drawable>?,
+                target: Target<Drawable?>,
                 isFirstResource: Boolean
             ): Boolean {
                 Log.d("TAG", "[onLoadFailed] = ${hashCode()}")
@@ -51,10 +51,10 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onResourceReady(
-                resource: Drawable?,
-                model: Any?,
-                target: Target<Drawable>?,
-                dataSource: DataSource?,
+                resource: Drawable,
+                model: Any,
+                target: Target<Drawable?>?,
+                dataSource: DataSource,
                 isFirstResource: Boolean
             ): Boolean {
                 Log.d("TAG", "[onResourceReady] = ${hashCode()}")
